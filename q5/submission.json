@@ -1,0 +1,7 @@
+{
+  "prompt": "Vertical, tightly cropped portrait framing with an extreme bottom crop, cutting off the very bottom edge of the foreground tray. A heavy, dark vignette deepens the shadows around the edges of the frame, creating a suffocatingly claustrophobic atmosphere. An over-the-shoulder, subjective documentary photograph looking down at a heavily scratched stainless steel cafeteria table. The camera crop is shifted right, revealing a stark, wide expanse of empty, cold, scratched metal on the right side of the tray. In this vast empty space sits a single, abandoned, chewed-up yellow No. 2 pencil. In the sharp foreground, pushed tightly to the bottom-left, sits a single isolated metal lunch tray. Dramatic, cold rim lighting catches the bruised edges of a single apple, a paper cup of cloudy water, and a bright red, blank paper penalty ticket angled diagonally upward, explicitly emphasizing its heavily torn perforated edge. In the distant background, pushed to the top-right and heavily blurred by a shallow depth of field, is a chaotic cluster of four brightly lit metal trays overflowing with sloppy, realistic institutional food. Unsettling visual tension, profound emotional contrast. No legible text, no words, no charts.",
+  "model": "Gemini 3 Flash Image (Nano Banana 2)",
+  "dataset_name": "World Bank-UNICEF Global Child Poverty Report",
+  "dataset_url": "https://www.unicef.org/social-policy/child-poverty",
+  "insight": "One in five children globally lives in extreme poverty."
+}
