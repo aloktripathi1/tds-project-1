@@ -13,6 +13,15 @@ This repository contains my Project-1 solutions and helper scripts.
 - q10: Network Game - Graph Detective
 - q11: Network Game - The Signal
 
+Question readme links:
+- [q1/README.md](q1/README.md)
+- [q2/README.md](q2/README.md)
+- [q3/README.md](q3/README.md)
+- [q4/README.md](q4/README.md)
+- [q9/README.md](q9/README.md)
+- [q10/README.md](q10/README.md)
+- [q11/README.md](q11/README.md)
+
 ## Setup
 
 - Python 3.10+
