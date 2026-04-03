@@ -1,10 +1,9 @@
-"""
-Data Labyrinth — Auto Solver (Python port of labyrinth_solver.js)
+# Data Labyrinth — Auto Solver (Python port of labyrinth_solver.js)
 
-Usage:
-    python solve.py
-JWT will be saved to jwt_token.txt automatically.
-"""
+# Usage:
+#     python solve.py
+# JWT will be saved to jwt_token.txt automatically.
+
 
 import asyncio
 import json
@@ -15,7 +14,7 @@ import time
 import urllib.request
 import urllib.error
 
-EMAIL = "2XfX00XXXX@ds.study.iitm.ac.in"
+EMAIL = "your_student_email@ds.study.iitm.ac.in"   
 BASE = "https://tds-network-games.sanand.workers.dev/labyrinth"
 COLS = 11
 TOTAL = 121
@@ -399,7 +398,7 @@ def main():
         print("Fragments:", json.dumps([f["data"] for f in required_fragments], indent=2))
 
     else:
-        print("Unexpected response:", json.dumps(result["data"]))
+        print("Unexpected response:", jsons.dumps(result["data"]))
         print(f"Session: {SESSION_TOKEN}")
 
 
