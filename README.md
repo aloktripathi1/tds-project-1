@@ -1,8 +1,6 @@
 # Project 1 - Tools in Data Science (Jan 2026)
 
-Build it. Validate it. Ship it.
-
-This folder contains my end-to-end solutions for Project 1, organized by question with reproducible scripts and submission-ready outputs.
+This repo contains my end-to-end solutions for Project 1, organized by question with reproducible scripts and submission-ready outputs.
 
 ## What's Inside
 
