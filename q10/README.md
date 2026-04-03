@@ -23,7 +23,6 @@ python solve.py
 
 ## Submission
 
-**Your Answer:**
 ```
 <JWT token returned by solve.py>
 ```

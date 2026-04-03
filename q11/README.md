@@ -24,7 +24,6 @@ python solve.py
 
 ## Submission
 
-**Your Answer:**
 ```
 <JWT completion token returned by solve.py>
 ```

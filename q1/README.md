@@ -2,7 +2,7 @@
 
 ## Task
 
-As Secret Agent 013, collect passwords for agents 058, 012, and 015, then submit JSON with `agent_id`, `email`, and `password`.
+As Secret Agent 013, collect passwords for your assigned target agents, then submit JSON with `agent_id`, `email`, and `password`.
 
 ---
 
@@ -31,7 +31,7 @@ The script scans every `.js`, `.json`, `.md`, `.txt`, `.csv`, and `.py` file und
 
 ### Step 3 — Match agent IDs to emails
 
-For each discovered email, the script computes that person's agent ID. When it matches one of your target IDs (058, 012, 015), it also computes the password and records the entry.
+For each discovered email, the script computes that person's agent ID. When it matches one of your target IDs, it also computes the password and records the entry.
 
 ### Step 4 — Write `password.json`
 
@@ -43,20 +43,25 @@ The matched records are written to `password.json` in the exact format required 
 
 ```bash
 # Basic: pass target IDs as positional args; emails are auto-scanned from the project tree
-python q1/generate_password_json.py 058 012 015
+# Replace 058 012 015 with your own assigned agent IDs
+python q1/generate_password_json.py 058 012 015  
 
 # Explicit target IDs flag
+# Replace 058,012,015 with your own assigned agent IDs
 python q1/generate_password_json.py --target-agent-ids 058,012,015
 
 # Also scan an external file for more candidate emails (e.g. a shared API-keys list)
+# Replace 058 012 015 with your own assigned agent IDs
 python q1/generate_password_json.py 058 012 015 --candidates-file ../../Api-keys.md
 
 # Add individual candidate emails directly
+# Replace IDs and candidate emails with your own targets and discovered addresses
 python q1/generate_password_json.py 058 012 015 \
   --candidate-email 23f2004001@ds.study.iitm.ac.in \
   --candidate-email 21f1000022@ds.study.iitm.ac.in
 
 # Custom output path
+# Replace 058 012 015 with your own assigned agent IDs
 python q1/generate_password_json.py 058 012 015 --out my_answer.json
 ```
 
@@ -85,22 +90,24 @@ The PRNG is a Python port of the `seedrandom` library used in the exam bundle (A
 
 **`password.json`:**
 
+Use this generic format and replace placeholder values with your actual results:
+
 ```json
 [
   {
-    "agent_id": "058",
-    "email": "23f2004001@ds.study.iitm.ac.in",
-    "password": "ce69dc7c18d966e4"
+    "agent_id": "YOUR_TARGET_ID_1",
+    "email": "student1@ds.study.iitm.ac.in",
+    "password": "16_hex_chars_here"
   },
   {
-    "agent_id": "012",
-    "email": "21f1000022@ds.study.iitm.ac.in",
-    "password": "8dd9ce056961783a"
+    "agent_id": "YOUR_TARGET_ID_2",
+    "email": "student2@ds.study.iitm.ac.in",
+    "password": "16_hex_chars_here"
   },
   {
-    "agent_id": "015",
-    "email": "23f2002096@ds.study.iitm.ac.in",
-    "password": "ac63e9f86c4472d4"
+    "agent_id": "YOUR_TARGET_ID_3",
+    "email": "student3@ds.study.iitm.ac.in",
+    "password": "16_hex_chars_here"
   }
 ]
 ```
