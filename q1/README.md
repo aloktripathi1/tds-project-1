@@ -6,7 +6,7 @@ As Secret Agent 013, collect passwords for your assigned target agents, then sub
 
 ---
 
-## Approach (ELI15)
+## Approach
 
 Instead of manually coordinating with hundreds of classmates, we reverse-engineered the exam's own JavaScript source to derive every agent's ID and password deterministically.
 
